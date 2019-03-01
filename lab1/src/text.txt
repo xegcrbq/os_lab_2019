@@ -1,0 +1,5 @@
+#!/bin/bash
+for((i=1;i<=150;i++))
+do
+od -t d -N 1 /dev/random>>numbers.txt
+done
