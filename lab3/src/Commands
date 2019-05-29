@@ -1,3 +1,12 @@
 cd os_lab_2019/lab3/src
 gcc find_min_max.c find_min_max.h  utils.c utils.h sequential_min_max.c -o Task1.out
 ./Task1.out 3 5
+
+gcc parallel_min_max.c find_min_max.h find_min_max.c utils.c utils.h -o Task2.out
+./Task2.out --seed 23 --array_size 10 --pnum 4
+
+./Task2.out --seed 23 --array_size 100000000 --pnum 4  &
+./Task2.out --seed 23 --array_size 100000000 --pnum 4  --by_files
+
+ make
+ make test_exec
