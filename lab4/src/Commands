@@ -1,0 +1,4 @@
+cd os_lab_2019/lab4/src
+./Task1 --seed 23 --array_size 10 --pnum 4 --timeout 1
+
+./Task2
